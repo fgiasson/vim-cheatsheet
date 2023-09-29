@@ -44,6 +44,31 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Word              | `gb`           | Adds another cursor on the next word it finds which is the same as the word under the cursor. First `gb` shows the selection, second time `gb` it creates the actual cursor. *VS Code specific*                                              |
 | Word              | `gh`           | Equivalent to hovering your mouse over wherever the cursor is. Handy for seeing types and error messages without reaching for the mouse! *VS Code specific* |
 
+### Editing Actions
+
+| Command | Notes                                              |
+| ------- | -------------------------------------------------- |
+| `u`     | Undo the last action                               |
+| `U`     | Undo all the changes on the current line           |
+| `i`     | Insert text at the current position                |
+| `I`     | Insert text at the begining of the line            |
+| `a`     | Append text after the current position             |
+| `A`     | Append text at the end of the line                 |
+| `o`     | Open a new line below the current line             |
+| `O`     | Open a new line above the current line             |
+| `r`     | Replace a single character under the cursor        |
+| `R`     | Overstrike existing characters with new text       |
+| `x`     | Delete a single character under the cursor         |
+| `X`     | Delete a single character before the cursor        |
+| `J`     | Join the current line with the next line           |
+| `~`     | Switch case of the character under the cursor      |
+| `s`     | Delete the current character and enter insert mode |
+| `S`     | Delete the current line and enter insert mode      |
+| `p`     | Paste register to a new line below the cursor      |
+| `P`     | Paste register to a new line above the cursor      |
+| `.`     | Repeat the last action                             |
+
+
 ### Movements
 
 | Movement                                | Commands   |
@@ -78,7 +103,6 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | ----------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Selection   | `gq`    | On a visual selection reflow and wordwrap blocks of text, preserving commenting style. Great for formatting documentation comments. *VS Code specific*                                                           |
 | Selection   | `af`    | Visual mode command which selects increasingly large blocks of text. Work well between parenthesis, otherwise it depends on the language and its structure (not much for Python for example). *VS Code specific* |
-|             |         |                                                                                                                                                                                                                  |
 
 
 ## Command-line mode
