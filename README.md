@@ -95,17 +95,25 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Move to beginning of the next paragraph            | `}`        |
 | Move to the beginning of current section           | `[[`       |
 | Move to the beginning of the next section          | `]]`       |
-| Search forward for pattern                         | `/pattern` |
-| Search backward for pattern                        | `?pattern` |
-| Repeat last search                                 | `n`        |
-| Repeat last search in opposite direction           | `N`        |
-| Search for word under cursor                       | `*`        |
-| Move to next occurence of `x` in current line      | `fx`       |
-| Move to previous occurence of `x` in current line  | `Fx`       |
-| Move to next occurence of `x` in current line      | `tx`       |
-| Move to previous occurence of `x` in current line  | `Tx`       |
-| Repeat previous find command in same direction     | `;`        |
-| Repeat previous find command in opposite direction | `,`        |
+
+### Search
+
+| Commands                                                              | Notes      |
+| --------------------------------------------------------------------- | ---------- |
+| Search forward for pattern                                            | `/pattern` |
+| Search backward for pattern                                           | `?pattern` |
+| Repeat last search                                                    | `n`        |
+| Repeat last search in opposite direction                              | `N`        |
+| Search forward for word under cursor                                  | `*`        |
+| Search barkward word under cursor                                     | `#`        |
+| Search forward for word under cursor. Can be embedded in other words  | `g*`       |
+| Search backward for word under cursor. Can be embedded in other words | `g#`       |
+| Move to next occurence of `x` in current line                         | `fx`       |
+| Move to previous occurence of `x` in current line                     | `Fx`       |
+| Move to next occurence of `x` in current line                         | `tx`       |
+| Move to previous occurence of `x` in current line                     | `Tx`       |
+| Repeat previous find command in same direction                        | `;`        |
+| Repeat previous find command in opposite direction                    | `,`        |
 
 ### Screen Movements
 
