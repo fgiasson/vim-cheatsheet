@@ -137,6 +137,50 @@ This is particularly useful to delete specific chunk of text. I would jump to th
 
 ## Visual mode
 
+### Selection
+
+| Commands | Notes                                            |
+| -------- | ------------------------------------------------ |
+| `v`      | Start a character-wise visual selection          |
+| `V`      | Start a line-wise visual selection               |
+| `^v`     | Start a block-wise visual selection              |
+| `gv`     | Reselect the last visual selection               |
+| `o`      | Move to the other end of the selection           |
+| `aw`     | Select a word and the trailing space             |
+| `iw`     | Select a word without the training space         |
+| `ab`     | Select a block with parenthesis                  |
+| `aB`     | Select a block with curly braces                 |
+| `ib`     | Select a block without parenthesis               |
+| `iB`     | Select a block without curly braces              |
+| `as`     | Select a sentence                                |
+| `is`     | Select a sentence without trailing spaces        |
+| `ap`     | Select a paragraph                               |
+| `ip`     | Select a paragraph without trailing spaces       |
+| `at`     | Select a tag block                               |
+| `it`     | Select a tag block without trailing spaces       |
+| `a"`     | Select a double quoted string                    |
+| `i"`     | Select a double quoted string without the quotes |
+| `a'`     | Select a single quoted string                    |
+| `i'`     | Select a single quoted string without the quotes |
+| `` a` `` | Select a backtick quoted string                  |
+| `` i` `` | Select a backtick quoted string without the `    |
+| `a(`     | Select a block with parenthesis                  |
+| `i(`     | Select a block without parenthesis               |
+| `a)`     | Select a block with parenthesis                  |
+| `i)`     | Select a block without parenthesis               |
+| `a[`     | Select a block with square brackets              |
+| `i[`     | Select a block without square brackets           |
+| `a]`     | Select a block with square brackets              |
+| `i]`     | Select a block without square brackets           |
+| `a{`     | Select a block with curly braces                 |
+| `i{`     | Select a block without curly braces              |
+| `a}`     | Select a block with curly braces                 |
+| `i}`     | Select a block without curly braces              |
+| `a<`     | Select a block with angle brackets               |
+| `i<`     | Select a block without angle brackets            |
+| `a>`     | Select a block with angle brackets               |
+| `i>`     | Select a block without angle brackets            |
+
 ### Code specific editing
 
 | Text Object | Command | Notes                                                                                                                                                                                                            |
