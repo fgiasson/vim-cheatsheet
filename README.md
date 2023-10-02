@@ -21,7 +21,7 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 ## Normal mode
 
-`### Editing
+### Editing
 
 | Text Object                     | Change      | Delete      | Copy         | Description                                                      |
 | ------------------------------- | ----------- | ----------- | ------------ | ---------------------------------------------------------------- |
@@ -84,12 +84,7 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | To a particular line `n`                           | `nG`       |
 | To begining of the file                            | `gg`       |
 | To the end of a file                               | `G`        |
-| Scroll forwared one screen                         | `^f`       |
-| Scroll backward one screen                         | `^b`       |
-| Scroll forward half a screen                       | `^d`       |
-| Scroll backward half a screen                      | `^u`       |
-| Scroll forward one line                            | `^e`       |
-| Scroll backward one line                           | `^y`       |
+| Move to the middle of the line of the screen       | `gm`       |
 | Scroll to the top of the screen                    | `H`        |
 | Scroll to the middle of the screen                 | `M`        |
 | Scroll to the bottom of the screen                 | `L`        |
@@ -112,6 +107,19 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Repeat previous find command in same direction     | `;`        |
 | Repeat previous find command in opposite direction | `,`        |
 
+### Screen Movements
+
+| Command                                | Notes       |
+| -------------------------------------- | ----------- |
+| Scroll forwared one screen             | `^f`        |
+| Scroll backward one screen             | `^b`        |
+| Scroll forward half a screen           | `^d`        |
+| Scroll backward half a screen          | `^u`        |
+| Scroll forward one line                | `^e`        |
+| Scroll backward one line               | `^y`        |
+| Scroll to top of the screen            | `z [enter]` |
+| Reposition cursor middle of the screen | `z.`        |
+| Reposition cursor bottom of the screen | `z-`        |
 
 ### Code specific Movements
 
