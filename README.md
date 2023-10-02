@@ -46,28 +46,32 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 ### Editing Actions
 
-| Command | Notes                                              |
-| ------- | -------------------------------------------------- |
-| `u`     | Undo the last action                               |
-| `U`     | Undo all the changes on the current line           |
-| `i`     | Insert text at the current position                |
-| `I`     | Insert text at the begining of the line            |
-| `a`     | Append text after the current position             |
-| `A`     | Append text at the end of the line                 |
-| `o`     | Open a new line below the current line             |
-| `O`     | Open a new line above the current line             |
-| `r`     | Replace a single character under the cursor        |
-| `R`     | Overstrike existing characters with new text       |
-| `x`     | Delete a single character under the cursor         |
-| `X`     | Delete a single character before the cursor        |
-| `J`     | Join the current line with the next line           |
-| `~`     | Switch case of the character under the cursor      |
-| `s`     | Delete the current character and enter insert mode |
-| `S`     | Delete the current line and enter insert mode      |
-| `p`     | Paste register to a new line below the cursor      |
-| `P`     | Paste register to a new line above the cursor      |
-| `.`     | Repeat the last action                             |
-
+| Command | Notes                                                        |
+| ------- | ------------------------------------------------------------ |
+| `u`     | Undo the last action                                         |
+| `U`     | Undo all the changes on the current line                     |
+| `i`     | Insert text at the current position                          |
+| `I`     | Insert text at the begining of the line                      |
+| `a`     | Append text after the current position                       |
+| `A`     | Append text at the end of the line                           |
+| `o`     | Open a new line below the current line                       |
+| `O`     | Open a new line above the current line                       |
+| `r`     | Replace a single character under the cursor                  |
+| `R`     | Overstrike existing characters with new text                 |
+| `x`     | Delete a single character under the cursor                   |
+| `X`     | Delete a single character before the cursor                  |
+| `J`     | Join the current line with the next line                     |
+| `~`     | Switch case of the character under the cursor                |
+| `g~`    | Switch the case of the current word                          |
+| `guw`   | Change the word to lower case                                |
+| `gUw`   | Change the word to UPPER case                                |
+| `s`     | Delete the current character and enter insert mode           |
+| `S`     | Delete the current line and enter insert mode                |
+| `p`     | Paste register to a new line below the cursor                |
+| `P`     | Paste register to a new line above the cursor                |
+| `.`     | Repeat the last action                                       |
+| `gi`    | Insert at the place at which yhou were last editing the file |
+| `gI`    | Insert at the beggining of the line                          |
 
 ### Movements
 
@@ -144,9 +148,18 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | `'x`     | Go to the first character of the line of mark `x`                     |
 | `` `x `` | Go to the to the exact character of `x`                               |
 | ` `` `   | Return to the exact position of the previous mark or context          |
-| `"`      | Return to the beginninf of the line of the previous mark or context   |
+| `''`     | Return to the beginning of the line of the previous mark or context   |
+| `'"`     | Move to the position when last editing the file                       |
+| `` `. `` | Move to last change in the file                                       |
+| `'.`     | Move to the beginning of the line of the last change of the file      |
+| `''`     | Return to the exact position before the last jump                     |
+| `''`     | Return to the beginning of the line before the last jump              |
+| `'.`     | Return to the exact position of the last change in the current buffer |
+| `` `[ `` | Move to the beginning of the previous text operation                  |
+| `` `] `` | Move to the end of the previous text operation                        |
+| `'[`     | Move to the beginning of the line of the previous text operation      |
 
-This is particularly useful to delete specific chunk of text. I would jump to the of the chunck I want to delete, set a mark with `ma`, then jump to the beginning of the chunk I want to delete and delete it with `` d`a ``.
+Marks are particularly useful to delete specific chunk of text. I would jump to the of the chunck I want to delete, set a mark with `ma`, then jump to the beginning of the chunk I want to delete and delete it with `` d`a ``.
 
 ## Insert mode
 
