@@ -113,13 +113,24 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Repeat previous find command in opposite direction | `,`        |
 
 
-
 ### Code specific Movements
 
 | Movement                | Commands | Notes                                                                                                                                                                                                                   |
 | ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Move to opening bracket | `%`      | `(`, `[` and `{` are considered opening brackets. This moves to the next opening bracket of the same line. If you the cursor is on the opening or closing bracket, then it will jump to its opening or closing bracket. |
 | Move to definition      | `gd`     | Jump to a definition. *VS Code specific*                                                                                                                                                                                |
+
+### Marks
+
+| Commands | Notes                                                                 |
+| -------- | --------------------------------------------------------------------- |
+| `m`      | Set a mark at the current cursor position.                            |
+| `'x`     | Go to the first character of the line of mark `x`                     |
+| `` `x `` | Go to the to the exact character of `x`                               |
+| ` `` `   | Return to the exact position of the previous mark or context          |
+| `"`      | Return to the beginninf of the line of the previous mark or context   |
+
+This is particularly useful to delete specific chunk of text. I would jump to the of the chunck I want to delete, set a mark with `ma`, then jump to the beginning of the chunk I want to delete and delete it with `` d`a ``.
 
 ## Insert mode
 
