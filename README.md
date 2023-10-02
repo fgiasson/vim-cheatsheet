@@ -71,19 +71,48 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 ### Movements
 
-| Movement                                | Commands   |
-| --------------------------------------- | ---------- |
-| Move Left                               | `h`        |
-| Move Right                              | `l`        |
-| Move Up                                 | `k`        |
-| Move Down                               | `j`        |
-| To first character of the line          | `+`        |
-| To first character of the previous line | `-`        |
-| To en of word                           | `e` or `E` |
-| To beginning of word                    | `w` or `W` |
-| To a particular line                    | `[x]G`     |
-| To begining of the file                 | `gg`       |
-| To the end of a file                    | `G`        |
+| Movement                                           | Commands   |
+| -------------------------------------------------- | ---------- |
+| Move Left                                          | `h`        |
+| Move Right                                         | `l`        |
+| Move Up                                            | `k`        |
+| Move Down                                          | `j`        |
+| To first character of the line                     | `+`        |
+| To first character of the previous line            | `-`        |
+| To en of word                                      | `e` or `E` |
+| To beginning of word                               | `w` or `W` |
+| To a particular line `n`                           | `nG`       |
+| To begining of the file                            | `gg`       |
+| To the end of a file                               | `G`        |
+| Scroll forwared one screen                         | `^f`       |
+| Scroll backward one screen                         | `^b`       |
+| Scroll forward half a screen                       | `^d`       |
+| Scroll backward half a screen                      | `^u`       |
+| Scroll forward one line                            | `^e`       |
+| Scroll backward one line                           | `^y`       |
+| Scroll to the top of the screen                    | `H`        |
+| Scroll to the middle of the screen                 | `M`        |
+| Scroll to the bottom of the screen                 | `L`        |
+| Move to column `n`                                 | `n|`       |
+| Move to beginning of current sentence              | `(`        |
+| Move to beginning of the next sentence             | `)`        |
+| Move to beginning of current paragraph             | `{`        |
+| Move to beginning of the next paragraph            | `}`        |
+| Move to the beginning of current section           | `[[`       |
+| Move to the beginning of the next section          | `]]`       |
+| Search forward for pattern                         | `/pattern` |
+| Search backward for pattern                        | `?pattern` |
+| Repeat last search                                 | `n`        |
+| Repeat last search in opposite direction           | `N`        |
+| Search for word under cursor                       | `*`        |
+| Move to next occurence of `x` in current line      | `fx`       |
+| Move to previous occurence of `x` in current line  | `Fx`       |
+| Move to next occurence of `x` in current line      | `tx`       |
+| Move to previous occurence of `x` in current line  | `Tx`       |
+| Repeat previous find command in same direction     | `;`        |
+| Repeat previous find command in opposite direction | `,`        |
+
+
 
 ### Code specific Movements
 
