@@ -92,7 +92,7 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Scroll to the top of the screen                    | `H`        |
 | Scroll to the middle of the screen                 | `M`        |
 | Scroll to the bottom of the screen                 | `L`        |
-| Move to column `n`                                 | `n|`       |
+| Move to column `n`                                 | `n\|`      |
 | Move to beginning of current sentence              | `(`        |
 | Move to beginning of the next sentence             | `)`        |
 | Move to beginning of current paragraph             | `{`        |
@@ -161,8 +161,25 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 Marks are particularly useful to delete specific chunk of text. I would jump to the of the chunck I want to delete, set a mark with `ma`, then jump to the beginning of the chunk I want to delete and delete it with `` d`a ``.
 
-## Insert mode
+### Windows Management
 
+| Commands        | Notes                                 |
+| --------------- | ------------------------------------- |
+| `[Control-W] s` | Split the current window horizontally |
+| `[Control-W] v` | Split the current window vertically   |
+| `[Control-W] w` | Switch between windows                |
+| `[Control-W] q` | Quit the current window               |
+| `[Control-W] o` | Close all windows except the current  |
+| `[Control-W] c` | Close the current window              |
+| `[Control-W] h` | Move to the window on the left        |
+| `[Control-W] j` | Move to the window below              |
+| `[Control-W] k` | Move to the window above              |
+| `[Control-W] l` | Move to the window on the right       |
+| `:e <file>`     | Open <file>                           |
+| `:ene`          | Open new empty file                   |
+| `:bn`           | Jump to next file                     |
+| `:bp`           | Jump to previous file                 |
+| `:bd`           | Remove file from the buffer list      |
 
 ## Visual mode
 
@@ -216,12 +233,6 @@ Marks are particularly useful to delete specific chunk of text. I would jump to 
 | ----------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Selection   | `gq`    | On a visual selection reflow and wordwrap blocks of text, preserving commenting style. Great for formatting documentation comments. *VS Code specific*                                                           |
 | Selection   | `af`    | Visual mode command which selects increasingly large blocks of text. Work well between parenthesis, otherwise it depends on the language and its structure (not much for Python for example). *VS Code specific* |
-
-
-## Command-line mode
-
-
-## Ex mode
 
 
 ## References
