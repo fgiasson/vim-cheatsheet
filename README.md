@@ -135,10 +135,24 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 ### Code specific Movements
 
-| Movement                | Commands | Notes                                                                                                                                                                                                                   |
-| ----------------------- | -------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Move to opening bracket | `%`      | `(`, `[` and `{` are considered opening brackets. This moves to the next opening bracket of the same line. If you the cursor is on the opening or closing bracket, then it will jump to its opening or closing bracket. |
-| Move to definition      | `gd`     | Jump to a definition. *VS Code specific*                                                                                                                                                                                |
+| Movement                               | Commands       | Notes                                                                                                                                                                                                                   |
+| -------------------------------------- | -------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Move to opening bracket                | `%`            | `(`, `[` and `{` are considered opening brackets. This moves to the next opening bracket of the same line. If you the cursor is on the opening or closing bracket, then it will jump to its opening or closing bracket. |
+| Move to definition                     | `gd`           | Jump to a definition. *VS Code specific*                                                                                                                                                                                |
+| Move to reference                      | `gr`           | Jump to a reference. *VS Code specific*                                                                                                                                                                                 |
+| Move to implementation                 | `gi`           | Jump to an implementation. *VS Code specific*                                                                                                                                                                           |
+| Move to type definition                | `gt`           | Jump to a type definition. *VS Code specific*                                                                                                                                                                           |
+| Jump to previous cursor                | `Ctrl-o`       | Jump to the previous cursor position in the _jump tree_. Unlike `''` it goes back to several previous positions.                                                                                                        |
+| Go back to subsequent cursor positions | `Ctrl-i`       | Go back to  subsequent cursor position. You can move back and forth with `Ctrl-o` and `Ctrl-i`.                                                                                                                         |
+| Display jumps list                     | `:jumps`       | Display the complete list of all the cursor jumps                                                                                                                                                                       |
+| Go to a specific jump                  | `:ju <number>` | Go to  specific jump number in the jumps list. The number can be negative.                                                                                                                                              |
+
+| Examples  | Notes                        |
+| --------- | ---------------------------- |
+| `2Ctrl-o` | Go back 2 previous positions |
+| `:ju -2`  | Go back 2 previous positions |
+| `3Ctrl-i` | Move forward 3 positions     |
+| `:ju 3`   | Move forward 3 positions     |
 
 ### Marks
 
