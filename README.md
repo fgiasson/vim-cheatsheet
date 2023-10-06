@@ -42,7 +42,9 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 | Function argument | `<operator>ia` | Perform an operation on an argument of a function. This one exludes arguments separators. `cia` - change the argument under the cursor while preserving separators like comma `,`. From [targets.vim](https://github.com/wellle/targets.vim) |
 | Function argument | `<operator>aa` | Perform an operation on an argument of a function. This one includesarguments separators. `daa` will delete the whole argument under the cursor and the separators if applicable. From [targets.vim](https://github.com/wellle/targets.vim)  |
 | Word              | `gb`           | Adds another cursor on the next word it finds which is the same as the word under the cursor. First `gb` shows the selection, second time `gb` it creates the actual cursor. *VS Code specific*                                              |
-| Word              | `gh`           | Equivalent to hovering your mouse over wherever the cursor is. Handy for seeing types and error messages without reaching for the mouse! *VS Code specific* |
+| Word              | `gh`           | Equivalent to hovering your mouse over wherever the cursor is. Handy for seeing types and error messages without reaching for the mouse! *VS Code specific*                                                                                  |
+| Line              | `>>`           | Indent line right                                                                                                                                                                                                                            |
+| Line              | `<<`           | Indent line left                                                                                                                                                                                                                             |
 
 ### Editing Actions
 
@@ -246,7 +248,8 @@ Marks are particularly useful to delete specific chunk of text. I would jump to 
 | ----------- | ------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Selection   | `gq`    | On a visual selection reflow and wordwrap blocks of text, preserving commenting style. Great for formatting documentation comments. *VS Code specific*                                                           |
 | Selection   | `af`    | Visual mode command which selects increasingly large blocks of text. Work well between parenthesis, otherwise it depends on the language and its structure (not much for Python for example). *VS Code specific* |
-
+| Selection   | `>`     | Indent code right                                                                                                                                                                                                |
+| Selection   | `<`     | Indent code left                                                                                                                                                                                                 |
 
 ## References
 
