@@ -77,32 +77,35 @@ Both `operators` and `counts` are *optional*. This means that those two commands
 
 ### Movements
 
-| Movement                                     | Commands   |
-| -------------------------------------------- | ---------- |
-| Move Left                                    | `h`        |
-| Move Right                                   | `l`        |
-| Move Up                                      | `k`        |
-| Move Down                                    | `j`        |
-| To first character of the line               | `+`        |
-| To first character of the previous line      | `-`        |
-| To end of the current word                   | `e` or `E` |
-| To beginning of the next word                | `w` or `W` |
-| To end of the previous word                  | `b` or `B` |
-| To end of the current word                   | `ge`       |
-| To a particular line `n`                     | `nG`       |
-| To begining of the file                      | `gg`       |
-| To the end of a file                         | `G`        |
-| Move to the middle of the line of the screen | `gm`       |
-| Scroll to the top of the screen              | `H`        |
-| Scroll to the middle of the screen           | `M`        |
-| Scroll to the bottom of the screen           | `L`        |
-| Move to column `n`                           | `n\|`      |
-| Move to beginning of current sentence        | `(`        |
-| Move to beginning of the next sentence       | `)`        |
-| Move to beginning of current paragraph       | `{`        |
-| Move to beginning of the next paragraph      | `}`        |
-| Move to the beginning of current section     | `[[`       |
-| Move to the beginning of the next section    | `]]`       |
+| Movement                                        | Commands   |
+| ----------------------------------------------- | ---------- |
+| Move to the end of a line                       | $          |
+| Move to the beg                                 | 0          |
+| Move to the first non-space character of a line | ^          |
+| Move Left                                       | `h`        |
+| Move Right                                      | `l`        |
+| Move Up                                         | `k`        |
+| Move Down                                       | `j`        |
+| To first character of the line                  | `+`        |
+| To first character of the previous line         | `-`        |
+| To end of the current word                      | `e` or `E` |
+| To beginning of the next word                   | `w` or `W` |
+| To end of the previous word                     | `b` or `B` |
+| To end of the current word                      | `ge`       |
+| To a particular line `n`                        | `nG`       |
+| To begining of the file                         | `gg`       |
+| To the end of a file                            | `G`        |
+| Move to the middle of the line of the screen    | `gm`       |
+| Scroll to the top of the screen                 | `H`        |
+| Scroll to the middle of the screen              | `M`        |
+| Scroll to the bottom of the screen              | `L`        |
+| Move to column `n`                              | `n\|`      |
+| Move to beginning of current sentence           | `(`        |
+| Move to beginning of the next sentence          | `)`        |
+| Move to beginning of current paragraph          | `{`        |
+| Move to beginning of the next paragraph         | `}`        |
+| Move to the beginning of current section        | `[[`       |
+| Move to the beginning of the next section       | `]]`       |
 
 ### Search
 
